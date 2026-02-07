@@ -1,6 +1,6 @@
 {
     "name": "miraiportal/ping",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "scripts": {
         "test": "vendor/bin/phpunit"
@@ -9,7 +9,7 @@
         "php": "^8.5"
     },
     "require-dev": {
-        "phpunit/phpunit": "^12.0"
+        "phpunit/phpunit": "^13.0"
     },
     "autoload": {
         "psr-4": {
