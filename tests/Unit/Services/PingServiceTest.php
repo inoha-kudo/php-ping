@@ -9,11 +9,20 @@ use PHPUnit\Framework\TestCase;
 
 final class PingServiceTest extends TestCase
 {
+    private PingService $pingService;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->pingService = new PingService;
+    }
+
     public function test_ping(): void
     {
         $this->assertSame(
             'pong',
-            PingService::ping(),
+            $this->pingService->ping(),
         );
     }
 }

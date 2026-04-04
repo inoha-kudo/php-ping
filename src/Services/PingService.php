@@ -6,7 +6,7 @@ namespace Miraiportal\Ping\Services;
 
 final class PingService
 {
-    public static function ping(): string
+    public function ping(): string
     {
         return 'pong';
     }
